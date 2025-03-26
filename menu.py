@@ -5,7 +5,7 @@ from reportes import *
 
 menu_bienvenida="""
 Bienvenido al portal usuario
-1️.Agregar Artista
+1.Agregar Artista
 2.Editar Artista
 3.Eliminar Artista
 4.Editar País
@@ -18,9 +18,12 @@ Bienvenido al portal usuario
 11.Salir
 """
 
+def menu_bienvenida_():
+    print(menu_bienvenida)
+
 def mostrar_menu():
     while True:
-        print("")
+        menu_bienvenida()
    
         opcion = input("Seleccione una opción: ").strip()
 
@@ -51,3 +54,5 @@ def mostrar_menu():
             case _:
                 print("Digite una opcion correcta")
 
+
+    mostrar_menu()
